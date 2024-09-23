@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CristO | Church Management Software</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+        <div class="container">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <div class="border-end border-primary pe-3">
+                            <a href="tel:+91 97860 00436" class="text-muted small"><i
+                                    class="fas fa-phone-alt text-primary me-2"></i>+91 97860 00436</a>
+                        </div>
+                        <div class="ps-3">
+                            <a href="mailto:cristo@boscosofttech.com" class="text-muted small"><i
+                                    class="fas fa-envelope text-primary me-2"></i>cristo@boscosofttech.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex justify-content-end">
+                        <div class="d-flex border-primary pe-3">
+                            <a class="btn p-0 text-primary me-3" href="cristo@boscosofttech.com"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="https://twitter.com/Boscosoft1"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="https://www.instagram.com/cristo_erp/"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn p-0 text-primary me-0"
+                                href="https://www.linkedin.com/company/81849391/admin/feed/posts/"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html" class="navbar-brand p-0">
+                    <!-- <h1 class="text-primary mb-0"><i class="fab fa-slack me-2"></i> CristO</h1> -->
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-0 mx-lg-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="about.html">Mission</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://parish.cristoerp.com" target="_blank"
+                                        rel="noopener noreferrer">Parokia</a></li>
+                                <li><a class="dropdown-item" href="https://religio.cristoerp.com" target="_blank"
+                                        rel="noopener noreferrer">ReligiO</a></li>
+                                <li><a class="dropdown-item" href="#">Cathedra</a></li>
+                                <li><a class="dropdown-item" href="#">Charisma</a></li>
+                            </ul>
+                        </li>
+                        <a href="#blog" class="nav-item nav-link">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <div class="nav-btn px-3">
+                            <a href="request.html" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Request
+                                for
+                                demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                    <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
+                        data-wow-delay=".9s">
+                        <i class="fa fa-phone-alt fa-2x"></i>
+                        <div class="position-absolute" style="top: 7px; right: 12px;">
+                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                        </div>
+                    </a>
+                    <div class="d-flex flex-column ms-3">
+                        <span>Call to Our Experts</span>
+                        <a href="tel:+91 97860 00436"><span class="text-dark">Free: +91 97860 00436</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Carousel Start -->
+    <section id="hero">
+        <div id="heroCarousel" data-bs-interval="8000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <ol class="carousel-indicators" id="hero-carousel-indicators">
+                <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"></li>
+                <li data-bs-target="#heroCarousel" data-bs-slide-to="1" class=""></li>
+                <li data-bs-target="#heroCarousel" data-bs-slide-to="2" class=""></li>
+                <li data-bs-target="#heroCarousel" data-bs-slide-to="3" class=""></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active"
+                    style="background-image: url('https://cristoerp.com/assets/img/cristo/04-slide.jpg');">
+                    <div class="overlay"></div>
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown" id="Welcome-title"><span
+                                    style="color: #018bd2">Welcome
+                                    to</span> <br> Church Management Software <span style="color:#ff8001">( CristO
+                                    )</span></h2>
+                            <p class="animate__animated animate__fadeInUp">Store &amp; organize the member data that’s
+                                best for your church <b>“Church Sans Paper”</b> Effective parish management software is
+                                a comprehensive digital solution designed to streamline and enhance the administrative
+                                and organizational tasks of a religious congregation. Manage families, members, and
+                                sacraments with ease. CristO is accessible at the diocesan, parish, family, or
+                                individual member level. A diocesan administrator can access all information related to
+                                the diocese.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"
+                    style="background-image: url('https://cristoerp.com/assets/img/cristo/2-slide.png');">
+                    <div class="overlay"></div>
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown" id="Welcome-title"><span
+                                    style="color: #018bd2">Welcome
+                                    to</span> <br> Province Management Software <span style="color:#ff8001">( ReligiO
+                                    )</span></h2>
+                            <p class="animate__animated animate__fadeInUp">A paperless technology driver back office for
+                                an administration. This user-friendly software tool is designed for the religious head
+                                of an institute, province secretary, community heads, and all province members. It
+                                allows for the management of communications (circulars, emails, meetings), creation of
+                                records (chronicles, concerns), and maintenance of critical and personal member
+                                information. The software also supports tracking assignments, history,
+                                institutional/community information, planning, reporting, and archiving.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"
+                    style="background-image: url('https://cristoerp.com/assets/img/cristo/6-slide.jpg');">
+                    <div class="overlay"></div>
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown" id="Welcome-title"><span
+                                    style="color: #018bd2">Welcome
+                                    to</span> <br> Diocese Management Software <span style="color:#ff8001">( Cathedra
+                                    )</span></h2>
+                            <p class="animate__animated animate__fadeInUp">Diocese Management Software functions as a
+                                centralized hub for overseeing diverse operations within a diocese, streamlining
+                                administrative tasks, and fostering better communication and collaboration among clergy,
+                                staff, and parishioners. By consolidating parishioner information, personnel records,
+                                financial data, and event planning tools into one platform, the software enhances
+                                efficiency and organization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"
+                    style="background-image: url('https://cristoerp.com/assets/img/cristo/5-slide.jpg');">
+                    <div class="overlay"></div>
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown" id="Welcome-title"><span
+                                    style="color: #018bd2">Welcome
+                                    to</span> <br> Parish Management Software <span style="color:#ff8001">( Parokia
+                                    )</span></h2>
+                            <p class="animate__animated animate__fadeInUp">A comprehensive church management software
+                                that makes managing your church easier. Parishes can manage families, members, and
+                                sacraments with ease. CristO is accessible at the diocesan, parish, family, or
+                                individual member level. Diocesan administrators have full access to all information
+                                related to the diocese.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid service py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Our Products</h4>
+                <h1 class="display-4 mb-4">We Provide Best Products</h1>
+                <p class="mb-0">CristO is a software solution tailored for churches and religious entities to simplify
+                    and coordinate diverse administrative tasks. It helps organize member details, manage sacrament
+                    records, track attendance, handle donations, plan events, and enhance communication. By centralizing
+                    and automating these processes, CristO enables church leaders to focus on nurturing their
+                    communities, fostering spiritual growth, and deepening member engagement.
+                </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/parish.png" class="img-fluid rounded-top w-100" alt="">
+                            <div class="service-icon p-3">
+                                <i class="fa fa-church fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <a href="#" class="d-inline-block h4 mb-4">Parokia</a>
+                                <p><i class="fa fa-check text-primary me-3"></i>Dashboard</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Sacraments</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Subscription</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Liturgical calendar</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Scheduled SMS</p>
+                                <a class="btn btn-primary btn-sm rounded-pill py-2 px-4"
+                                    href="https://parish.cristoerp.com" target="_blank" rel="noopener noreferrer">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/parish.png" class="img-fluid rounded-top w-100" style="" alt="">
+                            <div class="service-icon p-3">
+                                <i class="fa fa-church fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <a href="#" class="d-inline-block h4 mb-4">ReligiO</a>
+                                <p><i class="fa fa-check text-primary me-3"></i>Dashboard</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Members</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Community</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Contacts</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Documents</p>
+                                <a class="btn btn-primary btn-sm rounded-pill py-2 px-4"
+                                    href="https://religio.cristoerp.com" target="_blank" rel="noopener noreferrer">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/parish.png" class="img-fluid rounded-top w-100" alt="">
+                            <div class="service-icon p-3">
+                                <i class="fa fa-church fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <a href="#" class="d-inline-block h4 mb-4">Cathedra</a>
+                                <p><i class="fa fa-check text-primary me-3"></i>Integrity</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Commitment</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Customer Delight</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Technology Innovation</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Stakeholder Participation</p>
+                                <a class="btn btn-primary btn-sm rounded-pill py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/parish.png" class="img-fluid rounded-top w-100" alt="">
+                            <div class="service-icon p-3">
+                                <i class="fa fa-church fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <a href="#" class="d-inline-block h4 mb-4">Charisma</a>
+                                <p><i class="fa fa-check text-primary me-3"></i>Integrity</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Commitment</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Customer Delight</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Technology Innovation</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Stakeholder Participation</p>
+                                <a class="btn btn-primary btn-sm rounded-pill py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!-- Service End -->
+
+    <!-- About Start -->
+    <div class="container-fluid bg-light about pb-5 mt-5">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="about-item-content bg-white rounded p-5 h-100">
+                        <h4 class="text-primary">About Boscosoft Technologies</h4>
+                        <p>Bosco Soft Technologies Pvt. Ltd. celebrates over
+                            25 years in the IT industry, offering cutting-edge
+                            solutions globally with a team of 200+ experts.
+                            Specializing in application development and AI
+                            integration, we set high standards for quality and
+                            client success, transforming businesses and
+                            industries with our advanced IT solutions.
+                        </p>
+                        <h4 class="text-primary">Our Mission</h4>
+                        <p>We strive to achieve optimal results in the interest of stakeholders,
+                            employing cutting-edge technologies, involving committed associates, driven by innovation
+                            and leadership.</p>
+                        <h4 class="text-primary">Our Vision</h4>
+                        <p>Innovate and Lead</p>
+                        <h4 class="text-primary">Values</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Integrity</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Commitment</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Customer Delight</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Technology Innovation &
+                            Leadership</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Stakeholder Participation</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="bg-white rounded p-5 h-100">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-12">
+                                <div class="rounded bg-light">
+                                    <img src="img/newbilding.jpg" class="img-fluid rounded w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="counter-item bg-light rounded p-3 h-100">
+                                    <div class="counter-counting">
+                                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">25</span>
+                                        <span class="h1 fw-bold text-primary">+</span>
+                                    </div>
+                                    <h4 class="mb-0 text-dark">Years</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="counter-item bg-light rounded p-3 h-100">
+                                    <div class="counter-counting">
+                                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">200</span>
+                                        <span class="h1 fw-bold text-primary">+</span>
+                                    </div>
+                                    <h4 class="mb-0 text-dark">Professionals</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="counter-item bg-light rounded p-3 h-100">
+                                    <div class="counter-counting">
+                                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">2500</span>
+                                        <span class="h1 fw-bold text-primary">+</span>
+                                    </div>
+                                    <h4 class="mb-0 text-dark">Customers</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="counter-item bg-light rounded p-3 h-100">
+                                    <div class="counter-counting">
+                                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">7</span>
+                                        <span class="h1 fw-bold text-primary">+</span>
+                                    </div>
+                                    <h4 class="mb-0 text-dark">IT Products</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Product Count start -->
+
+    <div id="counter">
+
+        <div class="item">
+            <h1 class="count" data-number="50"></h1>
+            <h3 class="text">clients</h3>
+        </div>
+        <div class="item">
+            <h1 class="count" data-number="15"></h1>
+            <h3 class="text">provinces</h3>
+        </div>
+        <div class="item">
+            <h1 class="count" data-number="130"></h1>
+            <h3 class="text">parishes</h3>
+        </div>
+        <div class="item">
+            <h1 class="count" data-number="7"></h1>
+            <h3 class="text">diocese</h3>
+        </div>
+
+    </div>
+
+    <!-- Product count End -->
+
+    <!-- FAQs Start -->
+    <div class="container-fluid faq-section bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="h-100">
+                        <div class="mb-5">
+                            <h4 class="text-primary">Some Important FAQ's</h4>
+                            <h1 class="display-4 mb-0">Common Frequently Asked Questions</h1>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button border-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Q: What is CristO, and how can it benefit our church?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show active"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body rounded">
+                                        A: CristO is software tailored for churches and religious entities to simplify
+                                        and coordinate various administrative responsibilities
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Q: Is CristO compatible with our existing church management software?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A: CristO is compatible with most existing church management software systems.
+                                        However, compatibility may vary depending on the specific features and
+                                        integrations required. It is advisable to check with the CristO team or consult
+                                        the documentation for your church management software to ensure seamless
+                                        integration
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Q: What kind of technical support is available for CristO?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A: Our team is available 24/7 to address your queries, troubleshoot issues, and
+                                        provide guidance whenever you need it, ensuring you're never left without the
+                                        help you require
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                    <img src="img/faq.png" class="img-fluid w-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs End -->
+
+    <!-- Blog Start -->
+    <!-- <div class="container-fluid blog py-5" id="blog">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">From Blog</h4>
+                <h1 class="display-4 mb-4">News And Updates</h1>
+                <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis
+                    cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt
+                    sint dolorem autem obcaecati, ipsam mollitia hic.
+                </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/blog-1.png" class="img-fluid rounded-top w-100" alt="">
+                            <div class="blog-categiry py-2 px-4">
+                                <span>Business</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="blog-comment d-flex justify-content-between mb-3">
+                                <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
+                                <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
+                                <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
+                            </div>
+                            <a href="#" class="h4 d-inline-block mb-3">Which allows you to pay down insurance bills</a>
+                            <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta
+                                impedit eligendi? Quibusdam, laudantium.</p>
+                            <a href="#" class="btn p-0">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/blog-2.png" class="img-fluid rounded-top w-100" alt="">
+                            <div class="blog-categiry py-2 px-4">
+                                <span>Business</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="blog-comment d-flex justify-content-between mb-3">
+                                <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
+                                <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
+                                <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
+                            </div>
+                            <a href="#" class="h4 d-inline-block mb-3">Leverage agile frameworks to provide</a>
+                            <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta
+                                impedit eligendi? Quibusdam, laudantium.</p>
+                            <a href="#" class="btn p-0">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/blog-3.png" class="img-fluid rounded-top w-100" alt="">
+                            <div class="blog-categiry py-2 px-4">
+                                <span>Business</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="blog-comment d-flex justify-content-between mb-3">
+                                <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
+                                <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
+                                <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
+                            </div>
+                            <a href="#" class="h4 d-inline-block mb-3">Leverage agile frameworks to provide</a>
+                            <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta
+                                impedit eligendi? Quibusdam, laudantium.</p>
+                            <a href="#" class="btn p-0">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Blog End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial pb-5 mt-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Testimonial</h4>
+                <h1 class="display-4 mb-4">What Our Customers Are Saying</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                <div class="testimonial-item bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-4  col-lg-4 col-xl-3">
+                            <div class="h-100">
+                                <img src="img/noimage.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-8 col-lg-8 col-xl-9">
+                            <div class="d-flex flex-column my-auto text-start p-4">
+                                <h4 class="text-dark mb-0">De La Salle Brothers</h4>
+                                <p class="mb-3">Province</p>
+                                <div class="d-flex text-primary mb-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="mb-0">
+                                    ReligiO is the best software we have ever seen. It is very easy to use. I am very
+                                    satisfied with it. It really helps and reduces my stress.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-4  col-lg-4 col-xl-3">
+                            <div class="h-100">
+                                <img src="img/noimage.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-8 col-lg-8 col-xl-9">
+                            <div class="d-flex flex-column my-auto text-start p-4">
+                                <h4 class="text-dark mb-0">St Charles Borromeo</h4>
+                                <p class="mb-3">Province</p>
+                                <div class="d-flex text-primary mb-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-body"></i>
+                                </div>
+                                <p class="mb-0">
+                                    ReligiO is the best software we have ever seen. It is very easy to use. I am very
+                                    satisfied with it. It really helps and reduces my stress.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-4  col-lg-4 col-xl-3">
+                            <div class="h-100">
+                                <img src="img/noimage.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-8 col-lg-8 col-xl-9">
+                            <div class="d-flex flex-column my-auto text-start p-4">
+                                <h4 class="text-dark mb-0">Ascension church</h4>
+                                <p class="mb-3">Parish</p>
+                                <div class="d-flex text-primary mb-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-body"></i>
+                                    <i class="fas fa-star text-body"></i>
+                                </div>
+                                <p class="mb-0">
+                                    CristO is the best software we have ever seen. It is very easy to use. I am very
+                                    satisfied with it. It really helps and reduces my stress.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-xl-9">
+                    <div class="mb-5">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-6 col-xl-5">
+                                <div class="footer-item">
+                                    <a href="index.html" class="p-0">
+                                        <img src="img/newlogo.png" class="footer-logo" alt="Logo">
+                                    </a>
+                                    <p class="text-white mb-4 text-center">© 2024 CristO
+                                        Powered by <a href="https://boscosofttech.com/" class="text-white footlink"
+                                            target="_blank" rel="noreferrer"> Boscosoft Technologies pvt. ltd</a>
+                                        <br />
+                                        <a href="https://boscosofttech.com/terms-of-use" class="text-white footlink"
+                                            target="_blank" rel="noreferrer">Terms & Conditions</a> |
+                                        <a href="https://boscosofttech.com/privacy-policy" class="text-white footlink"
+                                            target="_blank" rel="noreferrer">Privacy Policy</a>
+                                    </p>
+                                    <div class="footer-btn d-flex" style="margin-left: 8rem;">
+                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-0" href="#"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3">
+                                <div class="footer-item">
+                                    <h4 class="text-white mb-4">Products</h4>
+                                    <a href="#" class="foot-menu text-white"><i class="fas fa-angle-right me-2"></i>
+                                        Parokia</a>
+                                    <a href="#" class="foot-menu text-white"><i class="fas fa-angle-right me-2"></i>
+                                        ReligiO</a>
+                                    <a href="#" class="foot-menu text-white"><i class="fas fa-angle-right me-2"></i>
+                                        Charisma</a>
+                                    <a href="#" class="foot-menu text-white"><i class="fas fa-angle-right me-2"></i>
+                                        Cathedra</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="footer-item">
+                                    <h4 class="text-white mb-4">Registered Office</h4>
+                                    <p class="text-white mb-3">Bosco Soft Technologies Pvt. Ltd.<br />
+                                        No. 231/77, S.H.C Complex<br />
+                                        Vaniyambadi Road, Tirupattur<br />
+                                        Tamil Nadu, India, 635 601<br />
+                                        <i class="fas fa-phone-alt me-2"></i><a href="tel:+91 96268 00800"
+                                            class="text-white foot-menu">+91 96268 00800</a><br />
+                                        <i class="fas fa-envelope me-2"></i><a href="mailto:info@boscosofttech.com"
+                                            class="text-white foot-menu">info@boscosofttech.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Resource Center</h4>
+                        <p class="text-white mb-3">Bosco Soft Technologies Pvt. Ltd.<br />
+                            Guezou Nagar, Yelagiri Hills,<br />
+                            Tirupattur, TamilNadu, 635853<br />
+                            <i class="fas fa-phone-alt me-2"></i><a href="tel:+91 97860 00436"
+                                class="text-white foot-menu">+91 97860 00436</a><br />
+                            <i class="fas fa-envelope me-2"></i><a href="mailto:cristo@boscosofttech.com"
+                                class="text-white foot-menu">cristo@boscosofttech.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-12 text-center mb-md-0">
+                    <span class="text-body"><a href="#" class="text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>2024 CristO</a>, All right
+                        reserved and Powered by <a href="https://boscosofttech.com/" class="text-white footlink"
+                            target="_blank" rel="noreferrer"> Boscosoft Technologies pvt. ltd</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        let count = document.querySelectorAll(".count")
+        let arr = Array.from(count)
+
+
+
+        arr.map(function (item) {
+            let startnumber = 0
+
+            function counterup() {
+                startnumber++
+                item.innerHTML = startnumber
+
+                if (startnumber == item.dataset.number) {
+                    clearInterval(stop)
+                }
+            }
+
+            let stop = setInterval(function () {
+                counterup()
+            }, 50)
+
+        })
+    </script>
+</body>
+
+</html>
